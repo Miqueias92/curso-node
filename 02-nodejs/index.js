@@ -38,7 +38,7 @@
 //  }
 
  obterUsuario(function resolverUsuario(error, usuario){
-    // null || "" || 0 === false
+    // no JS null || "" || 0 === false
     if(error){
         console.log('DEU RUIM em USUARIO', usuario);
         return;
@@ -50,7 +50,7 @@
             return;
         }
 
-        obterEndereco(usuario.id,  function resolverEndereco(error2, endereco){
+        obterEndereco(usuario.id, function resolverEndereco(error2, endereco){
             if(error2){
                 console.log('DEU RUIM em ENDERECO', endereco);
                 return;
@@ -69,3 +69,5 @@
 
  //console.log('usuario', usuario);
  //console.log('telefone', telefone);
+
+ // para executar o projeto corrente F5

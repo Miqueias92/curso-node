@@ -13,9 +13,6 @@
     // quando sucesso chama resolve
     return new Promise(function resolvePromisse(resolve, reject){
         setTimeout(function(){
-            
-            //return reject(new Error('DEU RUIM DE VERDADE!'));
-
             return resolve({
                 id: 1,
                 nome: 'Aladin',
@@ -47,34 +44,3 @@
     }, 2000);
  }
 
- const usuarioPromisse =  obterUsuario()
-
- usuarioPromisse
-    .then(function (usuario) {
-        return obterTelefone(usuario.id)
-            .then(function resolverTelefone(result){
-                return {
-                    usuario: {
-                        id: usuario.id,
-                        nome: usuario.nome
-                    },
-                    telefone: result
-                }
-            })
-    })
-    .then(function (resultado){
-        const endereco = obterEnderecoAsync(resultado.usuario.id)
-        return endereco.then(function (result) {
-            return {
-                usuario: resultado.usuario,
-                telefone: resultado.telefone,
-                endereco: result
-            }
-        })
-    })
-    .then(function (resultado) {
-        console.log('resultado', resultado)
-    })
-    .catch(function (error) {
-        console.log('DEU RUIM', error)  
-    })
