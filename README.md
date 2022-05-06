@@ -12,6 +12,8 @@
 
 # npm run dev - executa o script customizado
 
+
+
 # modulo 5 test com nodejs
 
 ## instalar o Mocha
@@ -21,3 +23,9 @@
 
 ## 2º instlar mocha no projeto
 ### npm install --save-dev mocha
+
+## rodando test com Mocha
+#### mocha [File]
+
+## instalando o nock para simular as requisições
+### npm install nock
