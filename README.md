@@ -1,31 +1,39 @@
-# curso-node
+# curso-node - Fundamentos e Desenvolvimento de Rest API
 
-# npm init - iniciar um projeto
+#### Miqueais Sousa
 
-# npm init -y
+https://www.linkedin.com/in/miqueias-sousa/
 
-# node index.js - executar o arquivo
+### Iniciar um prjeto node
 
-# criar sprit predefinido dentro do npm
+```npm init 
+    or 
+   npm init -y
+```
 
-# ir no packgejon ver linha 7
+### executar um projeto
 
-# npm run dev - executa o script customizado
+``` node index.js ```
+
+### criar spcrit predefinido dentro do npm
+
+#### ir no packgejon ver linha 7 / executa o script customizado
+
+``` npm run dev ```
 
 
+## modulo 5 test com nodejs
 
-# modulo 5 test com nodejs
+### instalar o Mocha
 
-## instalar o Mocha
+### 1º instalar mocha globalmente
+``` sudo npm install -g mocha ```
 
-## 1º instalar mocha globalmente
-### sudo npm install -g mocha
+### 2º instlar mocha no projeto
+``` npm install --save-dev mocha ```
 
-## 2º instlar mocha no projeto
-### npm install --save-dev mocha
+### rodando test com Mocha
+``` mocha [File] ```
 
-## rodando test com Mocha
-#### mocha [File]
-
-## instalando o nock para simular as requisições
-### npm install nock
+### instalando o nock para simular as requisições
+``` npm install nock ```
