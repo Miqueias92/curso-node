@@ -37,3 +37,7 @@ https://www.linkedin.com/in/miqueias-sousa/
 
 ### instalando o nock para simular as requisições
 ``` npm install nock ```
+
+### autmomatizar o teste com mocha
+#### mudar o package json para e rodar no terminal
+``` mocha -w ```
