@@ -6,38 +6,39 @@ https://www.linkedin.com/in/miqueias-sousa/
 
 ### Iniciar um prjeto node
 
-```npm init 
-    or 
-   npm init -y
+```
+    npm init 
+        or 
+    npm init -y
 ```
 
-### executar um projeto
+#### executar um projeto
 
 ``` node index.js ```
 
-### criar spcrit predefinido dentro do npm
+#### criar spcrit predefinido dentro do npm
 
-#### ir no packgejon ver linha 7 / executa o script customizado
+##### ir no packgejon ver linha 7 / executa o script customizado
 
 ``` npm run dev ```
 
 
-## modulo 5 test com nodejs
+### modulo 5 test com nodejs
 
-### instalar o Mocha
+#### instalar o Mocha
 
-### 1º instalar mocha globalmente
+#### 1º instalar mocha globalmente
 ``` sudo npm install -g mocha ```
 
-### 2º instlar mocha no projeto
+#### 2º instlar mocha no projeto
 ``` npm install --save-dev mocha ```
 
-### rodando test com Mocha
+#### rodando test com Mocha
 ``` mocha [File] ```
 
-### instalando o nock para simular as requisições
+#### instalando o nock para simular as requisições
 ``` npm install nock ```
 
-### autmomatizar o teste com mocha
-#### mudar o package json para e rodar no terminal
+#### autmomatizar o teste com mocha
+##### mudar o package json para e rodar no terminal
 ``` mocha -w ```
