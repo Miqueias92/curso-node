@@ -42,3 +42,17 @@ https://www.linkedin.com/in/miqueias-sousa/
 #### autmomatizar o teste com mocha
 ##### mudar o package json para e rodar no terminal
 ``` mocha -w ```
+
+
+#### modulo 6
+
+``` instalando sequelize ```
+
+``` 
+    ORM
+    npm install sequelize
+    
+    drivers
+    npm install pg-hstore pg
+
+ ```   
