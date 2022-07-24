@@ -23,6 +23,10 @@ class Postgres extends ICrud {
         return dataValues
     }
 
+    async read(item = {}) {
+        return await this._herois.findAll({where: item, raw: true})
+    }
+
     async defineModel() {
         this._herois = this._driver.define('herois', {
             id: {
