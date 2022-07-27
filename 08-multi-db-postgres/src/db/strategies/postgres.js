@@ -1,5 +1,6 @@
 const ICrud = require('./interfaces/InterfaceCrud')
 const Sequelize = require('sequelize')
+const { where } = require('sequelize')
 
 class Postgres extends ICrud {
     constructor() {
@@ -25,6 +26,10 @@ class Postgres extends ICrud {
 
     async read(item = {}) {
         return await this._herois.findAll({where: item, raw: true})
+    }
+
+    async update(id, item) {
+        return this._herois.update(item, { where: {id: id} })   
     }
 
     async defineModel() {
